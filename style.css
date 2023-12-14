@@ -3,6 +3,7 @@
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
+    --font-family-principal: 'Inter', sans-serif;
 }
 
 * {
@@ -13,6 +14,9 @@
 body {
     background: var(--cor-de-fundo);
     color: var(--branco-principal);
+    font-family: var(--font-family-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .container {
@@ -38,4 +42,15 @@ body {
 .botao_secundario {
     background-color: transparent;
     border: 1px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+    text-align: center;
+    color: var(--font-family-principal);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
 }
