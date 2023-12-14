@@ -23,12 +23,12 @@ body {
    height: 100vh;
    display: grid;
    grid-template-columns: 50% 50%;
-
-   text-align: center;
 }
 
 .principal {
     background: url(./img/background.png) no-repeat top right/contain;
+    align-items: center;
+    text-align: center;
 }
 
 .container__botao {
