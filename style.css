@@ -23,6 +23,8 @@ body {
    height: 100vh;
    display: grid;
    grid-template-columns: 50% 50%;
+
+   text-align: center;
 }
 
 .principal {
@@ -46,7 +48,6 @@ body {
 
 .container__aviso {
     font-size: 12px;
-    text-align: center;
     color: var(--font-family-principal);
 }
 
