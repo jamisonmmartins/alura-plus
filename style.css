@@ -1,5 +1,5 @@
 :root {
-    --branco-principal: #fff;
+    --branco-principal: #ffffff;
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
@@ -17,8 +17,25 @@ body {
 
 .container {
    height: 100vh;
+   display: grid;
+   grid-template-columns: 50% 50%;
 }
 
 .principal {
     background: url(./img/background.png) no-repeat top right/contain;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    color: var(--branco-principal);
+    padding: 16px;
+    border-radius: 5px;
+    display: block;
+
+    text-decoration: none;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 1px solid var(--branco-principal);
 }
