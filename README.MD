@@ -1,0 +1,1 @@
+![Alura+](https://cdn1.gnarususercontent.com.br/1/795715/911ec935-957c-4cee-a3a2-e3063ccef7b5.png)
