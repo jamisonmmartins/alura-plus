@@ -3,18 +3,20 @@
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
-    --font-family-principal: 'Inter', sans-serif;
+    --font-principal: 'Inter', sans-serif;
 }
 
 * {
     padding: 0;
     margin: 0;
+
+    box-sizing: border-box;
 }
 
 body {
     background: var(--cor-de-fundo);
     color: var(--branco-principal);
-    font-family: var(--font-family-principal);
+    font-family: var(--font-principal);
     font-size: 16px;
     font-weight: 400;
 }
@@ -26,30 +28,13 @@ body {
 }
 
 .principal {
-    background: url(./img/background.png) no-repeat top right/contain;
+    background: url(./img/background.png) no-repeat center/contain; 
     align-items: center;
     text-align: center;
 }
 
-.container__botao {
-    background-color: var(--botao-azul);
-    color: var(--branco-principal);
-    padding: 16px;
-    border-radius: 5px;
-    display: block;
-
-    text-decoration: none;
-    margin-bottom: 1em;
-}
-
-.botao_secundario {
-    background-color: transparent;
-    border: 1px solid var(--branco-principal);
-}
-
-.container__aviso {
-    font-size: 12px;
-    color: var(--font-family-principal);
+.container__caixa {
+    margin:0 6em;
 }
 
 .container__titulo {
@@ -61,6 +46,51 @@ body {
     margin: 1em 0 2em;
 }
 
-.container__caixa {
-    margin:0 6em
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block; 
+    text-decoration: none;
+    margin-bottom: 1em;
 }
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 1px solid var(--branco-principal);
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.descricao__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario)
+}
+
+
+/* Ajustar altura das sections em dispositivos com altura minima de 700px e largura minima de 1024px
+@media (min-height: 700px) and (min-width: 1024px)  {
+    .container {
+        height: 700px;
+        border: 5px solid white;
+    }
+}
+*/
