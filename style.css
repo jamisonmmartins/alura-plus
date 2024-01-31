@@ -22,13 +22,13 @@ body {
 }
 
 .container {
-   height: 100vh;
+   height: clamp(680px, 100vh, 700px);
    display: grid;
    grid-template-columns: 50% 50%;
 }
 
 .principal {
-    background: url(./img/background.png) no-repeat center/contain; 
+    background: url(./img/background.png) no-repeat center top/contain; 
     align-items: center;
     text-align: center;
 }
@@ -72,12 +72,14 @@ body {
 
 .secundario__botao {
     display: inline-block;
-    margin-top: ;
+    margin-top: 1rem;
 }
 
 .secundario {
     align-items: center;
     margin: 0 10em;
+
+    height: clamp(500px, 100vh, 550px);
 }
 
 .secundario__imagem {
@@ -95,6 +97,61 @@ body {
     color: var(--cinza-secundario)
 }
 
+
+.dispositivos {
+    text-align: center;
+    height: clamp(500px, 100vh, 600px);
+    padding: 5em 0;
+}
+
+.dispositivos__titulo {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none; 
+    
+    margin: 5rem 0;
+}
+
+.lista__item {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.rodape {
+    text-align: center;
+
+    margin: 5em 10em 5em;
+}
+
+.rodape__lista {
+    list-style-type: none;
+    
+    display: flex;
+    justify-content: space-between;
+
+    margin: 2.5rem 0 1.5rem;
+}
+
+.lista__link a{
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+.rodape__texto {
+    font-size: 14px;
+    line-height: 150%;
+
+    color: var(--cinza-secundario);
+}
+
+.rodape__texto:last-of-type {
+    margin-top: 1.25rem;
+}
 
 /* Ajustar altura das sections em dispositivos com altura minima de 700px e largura minima de 1024px
 @media (min-height: 700px) and (min-width: 1024px)  {
