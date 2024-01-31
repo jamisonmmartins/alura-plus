@@ -64,6 +64,8 @@ body {
 .container__botao:hover {
     background-color: var(--botao-azul-efeito);
     color: var(--cor-de-fundo);
+
+    transition: all 0.5s;
 }
 
 .container__aviso {
@@ -150,7 +152,7 @@ body {
 
 .lista__link a:hover {
     color: var(--botao-azul);
-    transition: color 0.7s;
+    transition: color 0.3s;
 }
 
 .rodape__texto {
