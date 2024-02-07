@@ -23,12 +23,14 @@ body {
 }
 
 .container {
-   height: clamp(680px, 100vh, 700px);
-   display: grid;
-   grid-template-columns: 50% 50%;
-}
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+/*     border: 1px solid white;
+ */}
 
 .principal {
+    height: clamp(600px, 100vh, 700px);
     background: url(./img/background.png) no-repeat center top/contain; 
     align-items: center;
     text-align: center;
@@ -87,7 +89,7 @@ body {
     align-items: center;
     margin: 0 10em;
 
-    height: clamp(500px, 100vh, 550px);
+    height: min(60vh, 400px);
 }
 
 .secundario__imagem {
